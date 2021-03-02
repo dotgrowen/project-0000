@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import { Navbar, NavbarLogo, NavItem } from '../components/Navbar';
 import Head from 'next/head'
+import FooterPage from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,8 +17,8 @@ function MyApp({ Component, pageProps }) {
         <NavbarLogo />
         <Navbar >
           <NavItem link="/writings" tab="Writings" />
+          <NavItem link="/entertainment" tab="Entertainment" />
           <NavItem link="/projects" tab="Projects" />
-          <NavItem link="/notes" tab="Notes" />
           <NavItem link="https://www.youtube.com/channel/UCQYcqeiLnkkbIVgZUuO2drA" at="@" tab="dotgrowen" />
         </Navbar>
       </div>
