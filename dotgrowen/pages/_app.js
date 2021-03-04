@@ -16,13 +16,14 @@ function MyApp({ Component, pageProps }) {
       <div className="nav">
         <NavbarLogo />
         <Navbar >
+          <NavItem link="/media" tab="Media" />
           <NavItem link="/writings" tab="Writings" />
-          <NavItem link="/entertainment" tab="Entertainment" />
           <NavItem link="/projects" tab="Projects" />
           <NavItem link="https://www.youtube.com/channel/UCQYcqeiLnkkbIVgZUuO2drA" at="@" tab="dotgrowen" />
         </Navbar>
       </div>
       <Component {...pageProps} />
+      <FooterPage/>
     </>
   );
 }

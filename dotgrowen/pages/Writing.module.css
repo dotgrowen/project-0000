@@ -1,0 +1,78 @@
+.top_area {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    margin: .3em 0em .1em 0em;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9em;
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+
+/***************** MAIN AREA ******************/
+
+.main_area {
+    width: 65em;
+    margin: 6.7em auto 0em auto;
+}
+
+.content {
+    padding: 2em 0em 2em 0em;
+    background-color: #101010;
+    border: #00fff259 .1em solid;
+    margin: 0em .1em 0em .5em;
+    transition: ease-in-out 300ms;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.content_box {
+margin-left: 2em;
+}
+
+.content_by {
+    margin: 0em 3.5em 0em 0em;
+    font-weight: 400;
+}
+
+.content_title {
+    margin: 0em;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.content_subtitle {
+    background-color: transparent;
+    font-size: .6em;
+    font-weight: 200;
+    margin: 1em auto 0em 0em;
+}
+
+/***** Hover */
+
+.content:hover {
+    border: #ffffffea .1px solid;
+    box-shadow: 0px 0px 7px 5px inset #00000087;
+    -webkit-box-shadow: 0px 0px 7px 5px inset #0000007e;
+    -moz-box-shadow: 0px 0px 7px 5px inset #0000007e;
+}
+
+.icon {
+    margin-left: .1em;
+    width: .7em;
+}

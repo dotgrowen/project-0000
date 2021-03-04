@@ -4,7 +4,7 @@
   background-color: #151515;
   border-top: 1px solid white;
   width: auto;
-  top: 25.5em;
+  top: 29.5em;
   left: 0%;
   right: 0%;
   bottom: 0%;
@@ -13,28 +13,28 @@
 
 .top_area {
   text-align: center;
-  margin-top: 6em;
+  margin-top: 4em;
   z-index: 1;
 }
 
+
+
 .title {
-  height: 57px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  font-size: 2.9em;
-  color: linear-gradient(to bottom, #dd3434, #c02727);
-  margin: 0px;
+  font-size: 4.5em;
+  margin: .3em 0em 0em 0em;
   z-index: 1;
   text-transform: capitalize;
 }
 
 .line {
-  border-top: solid white .1em;
-  width: 37em;
+  border-bottom: solid white .1em;
+  width: 23em;
   border-color: #1feee2;
-  margin: 0em auto;
+  margin: 0em auto 0em auto;
   transition: ease-in-out 500ms;
-  animation: grow ease-in-out 6s alternate;
+  animation: grow ease-in-out 2s alternate;
 }
 
 @keyframes grow {
@@ -42,7 +42,7 @@
     width: 0em;
   }
   100% {
-    width: 37em;
+    width: 23em;
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .content {
-  padding: 0em 2em .6em 2em;
+  padding: 0em 4em 1em 4em;
   background-color: #0F0F0F;
   border: #ffffff29 .1px solid;
   margin: 0em .5em 0em .5em;
@@ -69,9 +69,9 @@
 
 .icon {
   width: 20px;
-  padding: 1.8em;
+  padding: 2.3em;
   background-color: transparent;
-  margin: 3em 2.1em 2em 2.1em;
+  margin: 4em 1.7em 3.7em 1.7em;
   border: .1em solid #ffffff6d;
   transition: ease-in-out 300ms;
   z-index: 1;
@@ -79,9 +79,9 @@
 
 .icon2 {
   width: 20px;
-  padding: 1.8em;
+  padding: 2.3em;
   background-color: transparent;
-  margin: 3em 2.1em 2em 2.1em;
+  margin: 4em 1.7em 3.7em 1.7em;
   border: .1em solid #1feee26d;
   transition: ease-in-out 300ms;
   z-index: 1;
@@ -148,7 +148,7 @@
 
 .bottom_p {
   font-size: .9em;
-  font-weight: 100;
+  font-weight: 300;
   background-color: #151515;
   z-index: 1;
 }
@@ -163,7 +163,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 200;
 }
 
 .footer {
@@ -177,22 +179,6 @@
   width: 100%;
   color: #cccccc;
   text-align: center;
-  font-size:.7em ;
-  padding-bottom: 1.8em;
-}
-
-.footer2 {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #cccccc;
-  text-align: center;
-  font-size:.7em ;
-  padding-bottom: .5em;
-}
-
-.icon3 {
-  width: 1.3em;
-  color: #1feee2
+  font-size:.5em ;
+  padding-bottom: .8em;
 }

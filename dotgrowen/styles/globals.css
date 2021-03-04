@@ -10,7 +10,6 @@ body{
 * {
   font-family: 'Exo', sans-serif;
   color: #ffffff;
-  text-align: center;
 }
 
 ul {
@@ -68,8 +67,12 @@ main {
   animation: grow 2s ease-in-out infinite alternate;
 }
 
+
+
 .nav-items {
   border: none;
+  font-size: .7em;
+  font-weight: 100;
   color: white;
   margin: 0em .5em 0em .5em;
   transition: ease-in 300ms;
@@ -94,3 +97,17 @@ main {
   color: #1feee2
 }
 
+.footer {
+  display: inline-block;
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #cccccc;
+  text-align: center;
+  font-size:.5em ;
+  padding-bottom: .8em;
+}
