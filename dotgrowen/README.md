@@ -6,7 +6,7 @@ This is Dotgrowen's Main site and offical first Project Including. . .
 - Projects
 - Entertainment
 
-![Home Page UI v2](Home.v2.png)
+![Home Page UI v2](/public/Home.v2.png)
 
 ```
 {
