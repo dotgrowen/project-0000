@@ -21,15 +21,23 @@ if (!firebase.apps.length) {
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
-export const analytics = firebase.analytics();
 
-if (location.hostname === "localhost") {
-    firebase.firestore().settings({
-        host: "localhost:8080",
-        ssl: false,
-        experimentalForceLongPolling: true,
-    });
 
-    firebase.functions().useFunctionsEmulator("https://localhost:5001")
 
+
+/**`
+ * 
+ * @param {DocumentSnapshot} doc
+ */
+
+export function postToJSON(doc) {
+    const data = doc.data();
+    
+    return {
+        ...data,
+        createdAt: data.createdAt.toMillis(),
+        updatedAt: data.updatedAt.toMillis(),
+    }
 }
+
+export const fromMillis = firebase.firestore.Timestamp.fromMillis;
