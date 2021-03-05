@@ -1,0 +1,15 @@
+.main_area {
+    margin: 5em;
+}
+
+.meta {
+    display: flex;
+    justify-content: center;
+}
+
+.meta_info {
+    margin: 0em .3em 0em .3em;
+    border: #00fff259 .1em solid;
+    border-radius: .2em;
+    padding: .2em .7em .2em .7em;
+}

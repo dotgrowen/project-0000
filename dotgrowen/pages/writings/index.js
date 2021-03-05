@@ -57,41 +57,9 @@ export default function WritingPage(props) {
             <div className={styles.main_area}>
                 <PostFeed posts={posts} />
 
-                {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
+                {!loading && !postsEnd && <button className={styles.button} onClick={getMorePosts}>Load more</button>}
 
                 {postsEnd && 'You have reached the end!'}
-
-                {/* <div className={styles.content}>
-                    <div className={styles.content_box}>
-                        <h3 className={styles.content_title}>. Focus</h3>
-                        <h6 className={styles.content_subtitle}>WE ARE NOT THE SAME / 7 min</h6>
-                    </div>
-                    <h6 className={styles.content_by}><span className="green-dot">#</span>0001</h6>
-                </div>
-
-                <div className={styles.content}>
-                    <div className={styles.content_box}>
-                        <h3 className={styles.content_title}>. wealth</h3>
-                        <h6 className={styles.content_subtitle}>WE ARE NOT THE SAME</h6>
-                    </div>
-                    <h6 className={styles.content_by}><span className="green-dot">@</span>dotgrowen</h6>
-                </div>
-
-                <div className={styles.content}>
-                    <div className={styles.content_box}>
-                        <h3 className={styles.content_title}>. offline</h3>
-                        <h6 className={styles.content_subtitle}>WE ARE NOT THE SAME</h6>
-                    </div>
-                    <h6 className={styles.content_by}><span className="green-dot">@</span>dotgrowen</h6>
-                </div>
-
-                <div className={styles.content}>
-                    <div className={styles.content_box}>
-                        <h3 className={styles.content_title}>. opposition</h3>
-                        <h6 className={styles.content_subtitle}>WE ARE NOT THE SAME</h6>
-                    </div>
-                    <h6 className={styles.content_by}><span className="green-dot">@</span>dotgrowen</h6>
-                </div> */}
             </div>
         </>
     )
