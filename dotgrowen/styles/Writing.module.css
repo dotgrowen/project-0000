@@ -31,13 +31,20 @@
 
 .content {
     padding: 2em 0em 2em 0em;
-    background-color: #101010;
+    background-color: #0d0d0d;
     border: #00fff259 .1em solid;
     transition: ease-in-out 300ms;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    animation: boxlight ease-in-out 10s alternate-reverse infinite;
 }
+
+@keyframes boxlight {
+    0%{ border: transparent solid .1em; }
+    15%{ border: #00fff259 solid .1em;}
+    100%{ border: transparent solid .1em; }
+  }
 
 .content_box {
 margin-left: 2em;

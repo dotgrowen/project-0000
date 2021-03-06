@@ -1,10 +1,10 @@
 import styles from '../styles/Project.module.css';
+import toast from 'react-hot-toast';
 
 
 export default function ProjectPage() {
     return (
         <>
-
             <div className={styles.top_area}>
                 <h1 className={styles.title}>. Projects <img className={styles.icon} src={"/icon-8.png"} /></h1>
                 <span className={styles.subtitle}>Experiment w/ Dot's Projects </span>

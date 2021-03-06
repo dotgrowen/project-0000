@@ -12,6 +12,9 @@ body{
   color: #ffffff;
 }
 
+a {
+text-decoration: none;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -67,14 +70,23 @@ main {
   animation: grow 2s ease-in-out infinite alternate;
 }
 
-
-
 .nav-items {
   border: none;
   font-size: .7em;
   font-weight: 100;
   color: white;
   margin: 0em .5em 0em .5em;
+  transition: ease-in 300ms;
+  border-radius: 0%;
+  background-color: transparent;
+}
+
+.nav-main {
+  border: none;
+  font-size: .7em;
+  font-weight: 100;
+  color: white;
+  margin-left: 13em;
   transition: ease-in 300ms;
   border-radius: 0%;
   background-color: transparent;
@@ -91,6 +103,18 @@ main {
 
 .nav-items:hover {
   color: #1feee2;
+}
+
+.signinbtn {
+  background-color: transparent;
+  border: #ffffff .1em solid;
+  padding: .5em 1em;
+  animation: button 2s ease-in-out infinite alternate;
+}
+
+@keyframes button {
+  0%{ border: transparent solid .1em; }
+  100%{ border: #ffffff solid .1em;}
 }
 
 .green-dot {
@@ -110,4 +134,11 @@ main {
   text-align: center;
   font-size:.5em ;
   padding-bottom: .8em;
+}
+
+input[type=text] {
+  background-color: transparent;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

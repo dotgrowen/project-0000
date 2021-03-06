@@ -1,13 +1,13 @@
-import styles from '../../styles/Writing.module.css';
-import PostFeed from '../../components/PostFeed'
-import { postToJSON, firestore, fromMillis } from '../../lib/firebase'
+import styles from '../styles/Writing.module.css';
+import PostFeed from '../components/PostFeed'
+import { postToJSON, firestore, fromMillis } from '../lib/firebase'
 import { useState } from 'react'
 
 const LIMIT = 1;
 
 export async function getServerSideProps(context) {
     const postsQuery = firestore
-        .collection('post')
+        .collectionGroup('posts')
         .where('published', "==", true)
         .orderBy('createdAt', 'desc')
         .limit(5);
@@ -42,8 +42,6 @@ export default function WritingPage(props) {
 
         setPosts(posts.concat(newPosts));
         setLoading(false);
-
-
     };
 
     return (

@@ -38,7 +38,13 @@
     margin: 0em .5em 1em .5em;
     transition: ease-in-out 300ms;
     position: relative;
+    animation: boxlight ease-in-out 5s alternate-reverse infinite;
 }
+
+@keyframes boxlight {
+    0%{ border: transparent solid .1em; }
+    100%{ border: #1feee229 solid .1em;}
+  }
 
 .content_box {
     margin: 1.5em 0em 0em 1.5em;

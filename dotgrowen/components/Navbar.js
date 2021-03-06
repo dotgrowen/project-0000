@@ -1,8 +1,12 @@
 import Link from 'next/link';
-
+import { useContext } from 'react';
+import { UserContext } from '../lib/context';
 
 
 function Navbar(props) {
+
+    const { user, username } = useContext(UserContext)
+
     return (
         <nav>
             <ul className="navbar" >
@@ -13,9 +17,10 @@ function Navbar(props) {
 }
 
 function NavbarLogo() {
+    const { user, username } = useContext(UserContext)
     return (
             <Link href="/">
-                <div className="nav-item-1"></div>
+                {username ? <h6 className="nav-main">welcome {username}</h6> : <div className="nav-item-1"></div>}
             </Link>
     )
 }
