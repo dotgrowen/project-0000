@@ -1,6 +1,6 @@
 # project-0000
 
-This is Dotgrowen's Main site and offical first Project Including. . .
+This is Teamgrowen's site and offical first Project Including. . .
 
 - Writings
 - Projects
@@ -8,10 +8,3 @@ This is Dotgrowen's Main site and offical first Project Including. . .
 
 ![Home Page UI v2](/public/Home.v2.png)
 
-```
-{
-  "firstName": "Dot",
-  "lastName": "Growen",
-  "age": 23
-}
-``` 
